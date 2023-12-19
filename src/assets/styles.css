@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+small {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.issue {
+  cursor: pointer;
+}
+
+.issue-subinfo {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 35px;
+  border-radius: 100%;
+}
+
+.label-picker {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.label-picker:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.5s;
+}
+
+.loader {
+  animation: spin-animation 1.5s infinite;
+  display: block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.labelActive {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.icon-container {
+  width: 50px;
+}
+
+.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
